@@ -14,8 +14,8 @@ export default function Home() {
     <main>
       <Hero />
       <Stepper id="jak" stepCards={HowItWorksMap} heading="Co si na bankee chválí uživatelé" />
-      <CalculateLoanWrapper />
       <Form />
+      <CalculateLoanWrapper />
       <Footer />
     </main>
   );
