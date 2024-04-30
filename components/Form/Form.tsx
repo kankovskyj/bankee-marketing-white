@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/Button";
 import Image from "next/image";
+import { UnderlineText } from '@/components/ui/Underline';
 
 export const Form = () => {
   const [isMessageSent, setMessageSent] = useState<boolean>(false);
@@ -63,21 +64,21 @@ export const Form = () => {
   return (
     <div className="mx-4 my-16 lg:mx-28 lg:mt-16">
       <div
-        className="flex w-full flex-col items-center justify-between gap-8 rounded-[30px] bg-[#E3EAFF] p-8 lg:flex-row lg:gap-20 lg:rounded-[60px] lg:p-24 lg:py-24"
+        className="flex w-full flex-col items-center justify-between gap-8 rounded-[30px] bg-[#ffffff] px-0 pt-2 pb-2 lg:flex-row lg:gap-20 lg:rounded-[60px] lg:px-24 lg:py-16"
         id="kontakt"
       >
         <form onSubmit={handleSubmit} className="w-full order-1">
           <div className="flex flex-col gap-[16px] w-full">
             <div className="flex flex-col gap-[16px] lg:gap-[16px] lg:justify-between">
-              <p className="lg:mb-12 text-3xl lg:text-4xl font-bold">
-                Kontaktujte mě
+              <p className="lg:mb-12 text-3xl lg:text-4xl font-bold font-como">
+                <UnderlineText className="font-bold pb-[6px]">Kontaktujte mě</UnderlineText>
               </p>
               <p className="opacity-80">
                 Zadejte IČO a zanechte nám kontakt. Náš tým se vám co nejdříve
                 ozve zpět.
               </p>
               <label>
-                <div className="nadpis-input">Jméno</div>
+                <div className="nadpis-input pl-1">Jméno</div>
                 <input
                   id="name"
                   type="text"
@@ -89,7 +90,7 @@ export const Form = () => {
                 />
               </label>
               <label>
-                <div className="nadpis-input">IČO</div>
+                <div className="nadpis-input pl-1">IČO</div>
                 <input
                   id="company"
                   type="text"
@@ -100,7 +101,18 @@ export const Form = () => {
                 />
               </label>
               <label>
-                <div className="nadpis-input">E-mail</div>
+                <div className="nadpis-input pl-1">Název společnosti</div>
+                <input
+                  id="company"
+                  type="text"
+                  name="company"
+                  minLength={2}
+                  maxLength={200}
+                  className="main-input border rounded-[4px] mt-1 py-2 w-full px-2 border-primary/50 active:border-primary bg-transparent "
+                />
+              </label>
+              <label>
+                <div className="nadpis-input pl-1">E-mail</div>
                 <input
                   id="email"
                   type="email"
@@ -112,7 +124,7 @@ export const Form = () => {
                 />
               </label>
               <label>
-                <div className="nadpis-input">Telefon</div>
+                <div className="nadpis-input pl-1">Telefon</div>
                 <input
                   type="tel"
                   name="phone"
@@ -175,7 +187,7 @@ export const Form = () => {
             fill
             className="absolute bottom-0 z-10 w-5 object-contain"
           />
-          <div className="absolute bottom-0 mt-auto h-[70%] w-full rounded-[30px] bg-[#CBD5F2] lg:rounded-[60px]"></div>
+          <div className="absolute bottom-0 mt-auto h-[70%] w-full rounded-[30px] bg-[#FCDBB1] lg:rounded-[60px]"></div>
         </div>
       </div>
     </div>

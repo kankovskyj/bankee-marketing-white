@@ -36,8 +36,8 @@ export default function CalculateLoan() {
   const { values, setValues, interestRate, monthlyPayment, ltv, handleValueChange } = useCalculate({ localStorage: true })
 
   return (
-    <section className="py-32" id="kalkulacka">
-      <h2 className="mb-12 text-3xl lg:text-4xl font-bold lg:text-[46px] text-center mx-auto">
+    <section className="mt-12 lg:pt-16 pb-0 lg:pb-8" id="kalkulacka">
+      <h2 className="mb-4 lg:mb-16 text-3xl lg:text-4xl font-bold lg:text-[46px] text-center mx-auto">
         Spočítejte to s námi!
       </h2>
 
@@ -98,7 +98,7 @@ export default function CalculateLoan() {
                 },
                 title: "Splatnost půjčky",
                 valueFormatter: (value: number) =>
-                  (value && `${value} "měsíců"`) || undefined,
+                  (value && `${value} měsíců`) || undefined,
               },
               {
                 id: "colleteralPropertyValue",
@@ -193,8 +193,29 @@ export default function CalculateLoan() {
               {`${interestRate} % p.a.`}
             </div>
           </div>
+          <div className='flex items-center gap-1'>
+          <span className="mt-4 block font-semibold">Vaše měsíční splátka</span>
+          <Popover>
+                  <PopoverTrigger>
+                    <Icons.info width={18} height={18} className="inline-block" />
+                  </PopoverTrigger>
+                  <PopoverContent className="relative flex flex-col bg-transparent shadow-none border-0">
+                    <span className="flex text-[15.7px] z-20">
+                      Lorem ipsum dolor sit amet nunquam et ameane et merve.
+                      Daliorum beni dea lorem ipsumda.
+                    </span>
 
-          <span className="mt-4 block font-semibold">Kolik chcete splácet </span>
+                    <Image
+                      alt="chat"
+                      src="/chatokno.png"
+                      width={400}
+                      height={300}
+                      className="flex absolute bottom-[-48px] left-[-10px] z-10 object-contain"
+                    />
+                  </PopoverContent>
+                </Popover>
+          </div>
+          
           <div className="mt-2 rounded-[14px] bg-[#F3F4F5] px-2 py-1 text-3xl font-extrabold max-2xl:text-2xl">
             {monthlyPayment.toLocaleString("cs-CZ", {
               style: "currency",
