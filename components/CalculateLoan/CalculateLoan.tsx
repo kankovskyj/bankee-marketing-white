@@ -42,7 +42,7 @@ export default function CalculateLoan() {
       </h2>
 
 
-      <div className="flex flex-col gap-2 lg:flex-row lg:gap-12 w-full lg:pl-40">
+      <div className="flex flex-col gap-2 lg:flex-row lg:gap-12 w-full lg:pl-40 mb-24">
           <Calculator
             title=""
             description=""
