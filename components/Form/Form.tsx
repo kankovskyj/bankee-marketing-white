@@ -187,7 +187,7 @@ export const Form = () => {
             fill
             className="absolute bottom-0 z-10 w-5 object-contain"
           />
-          <div className="absolute bottom-0 mt-auto h-[70%] w-full rounded-[30px] bg-[#E3EAFF] lg:rounded-[60px]"></div>
+          <div className="absolute bottom-0 mt-auto h-[70%] w-full rounded-[30px] bg-[#FCDBB1] lg:rounded-[60px]"></div>
         </div>
       </div>
     </div>
