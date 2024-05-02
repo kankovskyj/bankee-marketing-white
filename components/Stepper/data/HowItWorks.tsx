@@ -10,7 +10,7 @@ export default function HowItWorks() {
             stepNo: 1,
             hasArrow: false,
             title: "Jednoduše, přehledně a rychle",
-            description: "Pohodlná a bezplatná online registrace. Díky procesu schvalování a minimálnímu počtu požadovaných dokumentů žádost vyplníte za pár minut.."
+            description: "Pohodlná a bezplatná online registrace. Díky procesu schvalování a minimálnímu počtu požadovaných dokumentů žádost vyplníte za pár minut."
         },
         {
             stepNo: 2,

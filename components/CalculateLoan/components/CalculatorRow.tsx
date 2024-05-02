@@ -43,14 +43,7 @@ export default function CalculatorRow({ row, value, onChange }: CalculatorRowPro
           <div className={`flex items-start justify-between ${row.hideSlider ? "flex-row relative" : "flex-col gap-4"}`}>
             <span className={`text-left text-xl font-semibold ${row.hideSlider && "absolute top-1.5"} max-2xl:text-base`}>
               {row.title}{" "}
-              <Popover>
-                <PopoverTrigger>
-                  <Icons.info width={18} height={18} className="inline-block" />
-                </PopoverTrigger>
-                <PopoverContent className="bg-white z-50">
-                  {row.description}
-                </PopoverContent >
-              </Popover>
+             
             </span>
             <div className={`flex w-full ${row.hideSlider ? "justify-center" : "justify-between"}`}>
               <button
