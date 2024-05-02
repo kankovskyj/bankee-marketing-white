@@ -34,7 +34,7 @@ type StepperProps = {
 export default function Stepper({ id, heading, subHeading, stepCards }: StepperProps) {
   return (
     <section
-      className="mt-8 lg:mt-16 bg-[#F3F4F5] px-4 py-12 lg:px-28 lg:py-20"
+      className="pt-8 lg:pt-16 bg-[#F3F4F5] px-4 py-12 lg:px-28 lg:py-20"
       id={id}
     >
       <h2 className="mb-12 text-3xl lg:text-4xl font-bold lg:text-[36px] mx-auto text-center">
