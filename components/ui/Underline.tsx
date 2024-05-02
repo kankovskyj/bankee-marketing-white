@@ -7,11 +7,13 @@ interface Props {
   children: string;
   className?: string;
   isVisible?: boolean;
+  strokeColor?: string;
 }
 
 export const UnderlineText = ({
   children,
   className,
+  strokeColor,
   isVisible = true,
 }: Props) => {
   const strokeWidth = random(12, 16) / 100;
@@ -43,7 +45,7 @@ export const UnderlineText = ({
           className="absolute -bottom-2.5 left-0 w-full overflow-visible"
         >
           <path
-            stroke="currentColor"
+            stroke={strokeColor || "currentColor"}
             className="fill-none"
             d={d}
             strokeWidth={`${strokeWidth}em`}

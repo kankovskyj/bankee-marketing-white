@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Stepper id="jak" stepCards={HowItWorksMap} heading="Co si na bankee chválí uživatelé" />
+      <Stepper id="jak" stepCards={HowItWorksMap} heading="Proč si bankee chválí uživatelé" />
       <Form />
       <CalculateLoanWrapper />
       <Footer />

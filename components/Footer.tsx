@@ -13,7 +13,7 @@ export default function Footer() {
             <p
               className={`mt-1 font-medium text-muted/70 font-como text-[1.0625rem] lg:text-base`}
             >
-              My jsme BANKEE, my rozumíme lidem. Propojujeme žadatele o podnikatelský nebankovní úvěr s ověřenými investory.
+              My jsme bankee, my rozumíme lidem. Propojujeme žadatele o podnikatelský nebankovní úvěr s ověřenými investory.
             </p>
           </div>
           <div className="flex">

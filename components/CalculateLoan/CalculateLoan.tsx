@@ -245,7 +245,7 @@ export default function CalculateLoan() {
                 alt="lupa"
               />{" "}
               <span className="text-[0.94rem] font-semibold max-xl:text-sm">
-                ihned schváleno
+                Ihned schváleno
               </span>
             </div>
 
