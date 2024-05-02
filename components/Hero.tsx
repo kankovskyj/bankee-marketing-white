@@ -12,7 +12,7 @@ const Hero = (props: Props) => {
         <div className='relative mx-auto'>
         <Button variant="dark" className="flex flex-row gap-2 items-center rounded-full mx-auto bg-transparent py-0 h-auto text-lg text-[#fc9f64]" size="sm" >
               
-              <span>Chci půjčku</span>
+              <span className='font-extrabold'>Chci půjčku</span>
               <Image alt="arrow" src="/arrow-right.svg" width={25} height={12} />
 
             </Button>
