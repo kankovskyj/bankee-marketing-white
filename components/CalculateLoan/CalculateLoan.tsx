@@ -168,7 +168,7 @@ export default function CalculateLoan() {
             },
           ]}
         />
-        <div className="relative flex flex-col items-start overflow-hidden">
+        <div className="relative flex flex-col items-start">
           <div className="mt-8 flex flex-col items-start gap-2">
             <span className="block font-semibold">
               Jednorázový poplatek
@@ -284,7 +284,7 @@ export default function CalculateLoan() {
             alt="arrow right"
             width={220}
             height={125}
-            className="absolute bottom-[6rem] right-[-1.5rem] z-10 h-40 w-[11rem] rotate-90 scale-125 lg:bottom-[13rem] lg:scale-150 xl:right-[-10rem]"
+            className="absolute left-[9rem] bottom-[9rem]  z-10 h-40 w-[11rem] rotate-90 scale-125"
           />
         </div>
       </div>
