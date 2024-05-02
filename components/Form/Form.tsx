@@ -180,7 +180,7 @@ export const Form = () => {
             </div>
           )}
         </form>
-        <div className="relative order-2 w-full h-[13rem] mt-12 lg:mt-0 lg:h-[24rem] overflow-hidden rounded-[30px] lg:aspect-auto lg:rounded-[60px]">
+        <div className="relative order-2 w-full h-[13rem] mt-3 lg:mt-0 lg:h-[24rem] overflow-hidden rounded-[30px] lg:aspect-auto lg:rounded-[60px]">
           <Image
             src="/woman.webp"
             alt="woman"
