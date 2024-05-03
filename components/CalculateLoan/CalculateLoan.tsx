@@ -45,7 +45,7 @@ export default function CalculateLoan() {
   } = useCalculate({ localStorage: true });
 
   return (
-    <section className="mt-12 lg:pt-16 pb-0 lg:pb-8" id="kalkulacka">
+    <section className="mt-6 lg:pt-16 pb-0 lg:pb-8" id="kalkulacka">
       <h2 className="mb-4 lg:mb-16 text-3xl lg:text-4xl font-bold lg:text-[46px] text-center mx-auto">
         Spočítejte to s námi!
       </h2>
@@ -302,7 +302,7 @@ const CalculateLoanWrapper = () => {
   if (!isClient) return null;
 
   return (
-    <div className="mx-4 mt-8 lg:mx-28 lg:mt-16">
+    <div className="mx-4 lg:mx-28">
       <CalculateLoan />
     </div>
   );

@@ -62,7 +62,7 @@ export const Form = () => {
   };
 
   return (
-    <div className="px-4 mx-0 py-16 lg:px-28 bg-[#f9d19d]">
+    <div className="px-4 mx-0 py-4 lg:px-28 bg-[#f9d19d]">
       <div
         className="flex w-full flex-col items-center justify-between gap-8 rounded-[30px]  px-0 pt-2 pb-2 lg:flex-row lg:gap-20 lg:rounded-[60px] lg:px-24 lg:py-16"
         id="kontakt"
