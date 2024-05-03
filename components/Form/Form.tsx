@@ -62,7 +62,7 @@ export const Form = () => {
   };
 
   return (
-    <div className="px-4 mx-0 py-4 lg:px-28 bg-[#f9d19d]">
+    <div className="px-4 mx-0 py-4 lg:px-28 bg-[#E3EAFF]">
       <div
         className="flex w-full flex-col items-center justify-between gap-8 rounded-[30px]  px-0 pt-2 pb-2 lg:flex-row lg:gap-20 lg:rounded-[60px] lg:px-24 lg:py-16"
         id="kontakt"
@@ -187,7 +187,7 @@ export const Form = () => {
             fill
             className="absolute bottom-0 z-10 w-5 object-contain"
           />
-          <div className="absolute bottom-0 mt-auto h-[70%] w-full rounded-[30px] bg-[#FCDBB1] lg:rounded-[60px]"></div>
+          <div className="absolute bottom-0 mt-auto h-[70%] w-full rounded-[30px] bg-[#c9d5fb] lg:rounded-[60px]"></div>
         </div>
       </div>
     </div>
