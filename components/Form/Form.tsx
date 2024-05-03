@@ -62,9 +62,9 @@ export const Form = () => {
   };
 
   return (
-    <div className="mx-4 my-16 lg:mx-28 lg:mt-16">
+    <div className="lg:mx-0 mx-4 py-16 lg:px-28 bg-[#f9d19d]">
       <div
-        className="flex w-full flex-col items-center justify-between gap-8 rounded-[30px] bg-[#ffffff] px-0 pt-2 pb-2 lg:flex-row lg:gap-20 lg:rounded-[60px] lg:px-24 lg:py-16"
+        className="flex w-full flex-col items-center justify-between gap-8 rounded-[30px]  px-0 pt-2 pb-2 lg:flex-row lg:gap-20 lg:rounded-[60px] lg:px-24 lg:py-16"
         id="kontakt"
       >
         <form onSubmit={handleSubmit} className="w-full order-1">
@@ -86,7 +86,7 @@ export const Form = () => {
                   required
                   minLength={3}
                   maxLength={200}
-                  className="main-input border rounded-[4px] mt-1 py-2 w-full px-2 border-primary/50 active:border-primary bg-transparent "
+                  className="main-input bg-white border rounded-[4px] mt-1 py-2 w-full px-2 border-primary/50 active:border-primary bg-transparent "
                 />
               </label>
               <label>
@@ -97,7 +97,7 @@ export const Form = () => {
                   name="company"
                   minLength={2}
                   maxLength={200}
-                  className="main-input border rounded-[4px] mt-1 py-2 w-full px-2 border-primary/50 active:border-primary bg-transparent "
+                  className="main-input bg-white border rounded-[4px] mt-1 py-2 w-full px-2 border-primary/50 active:border-primary bg-transparent "
                 />
               </label>
               <label>
@@ -108,7 +108,7 @@ export const Form = () => {
                   name="company"
                   minLength={2}
                   maxLength={200}
-                  className="main-input border rounded-[4px] mt-1 py-2 w-full px-2 border-primary/50 active:border-primary bg-transparent "
+                  className="main-input bg-white border rounded-[4px] mt-1 py-2 w-full px-2 border-primary/50 active:border-primary bg-transparent "
                 />
               </label>
               <label>
@@ -120,7 +120,7 @@ export const Form = () => {
                   required
                   minLength={2}
                   maxLength={200}
-                  className="main-input border rounded-[4px] mt-1 py-2 w-full px-2 border-primary/50 active:border-primary bg-transparent "
+                  className="main-input bg-white border rounded-[4px] mt-1 py-2 w-full px-2 border-primary/50 active:border-primary bg-transparent "
                 />
               </label>
               <label>
@@ -129,7 +129,7 @@ export const Form = () => {
                   type="tel"
                   name="phone"
                   id="phone"
-                  className="main-input border rounded-[4px] mt-1 py-2 w-full px-2 border-primary/50 active:border-primary bg-transparent "
+                  className="main-input bg-white border rounded-[4px] mt-1 py-2 w-full px-2 border-primary/50 active:border-primary bg-transparent "
                 />
               </label>
             </div>
