@@ -13,8 +13,11 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Stepper id="jak" stepCards={HowItWorksMap} heading="Proč si bankee chválí uživatelé" />
-      <Form />
+      <Stepper
+        id="how-it-works-stepper"
+        heading="Proč si bankee chválí uživatelé"
+        stepCards={HowItWorksMap}
+      />      <Form />
       <CalculateLoanWrapper />
       <Footer />
     </main>

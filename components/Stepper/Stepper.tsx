@@ -17,9 +17,9 @@ type StepCardProps = {
     height: number;
     alt: string;
   };
-  title?: string;
-  underlinedTitle?: string;
-  description: string;
+  title?: React.ReactNode;  // Updated to accept JSX
+  underlinedTitle?: string; // Consider if you still need this since 'title' is now more flexible
+  description: React.ReactNode;  // Already updated to accept JSX or string
   stepNo?: number;
   hasArrow?: boolean;
 };

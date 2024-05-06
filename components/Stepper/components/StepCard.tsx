@@ -7,8 +7,8 @@ import Image from "next/image";
 import { UnderlineText } from "@/components/ui/Underline";
 
 export type Props = {
-  title?: string;
-  description: string;
+  title?: React.ReactNode; // Changed from string to React.ReactNode
+  description: React.ReactNode; // Ensure this is already React.ReactNode
   image?: {
     src: string;
     alt: string;
@@ -20,41 +20,39 @@ export type Props = {
   underlinedTitle?: string;
 };
 
-export default function StepCard(props: Props) {
+export default function StepCard({ title, description, image, stepNo, hasArrow, underlinedTitle }: Props) {
   return (
     <div className="flex w-full flex-col items-start">
-      {props.image && (
+      {image && (
         <div className="z-10 ml-6 flex h-[3.75rem] w-[3.75rem] rounded-[12px] border-[1.5px] border-[#aaaaaa] bg-[#ffffff]">
           <Image
             className="m-auto"
-            src={props.image.src}
-            width={props.image.width}
-            height={props.image.height}
-            alt={props.image.alt}
+            src={image.src}
+            width={image.width}
+            height={image.height}
+            alt={image.alt}
           />
         </div>
       )}
-      {typeof props.stepNo === "number" && (
+      {typeof stepNo === "number" && (
         <div className="z-10 ml-6 flex h-14 w-14 rounded-[12px] border-[1.5px] border-[#aaaaaa] bg-[#ffffff]">
           <span className="m-auto flex text-[1.75rem] font-semibold text-[#545454]">
-            {props.stepNo}
+            {stepNo}
           </span>
         </div>
       )}
       <div className="relative -mt-7 h-full rounded-[28px] border-[1.5px] bg-[#FFFDD6] px-6 pb-6 pt-12 border-[#0000001a]">
         <span className="text-[24px] font-bold leading-tight font-como">
-          {props.title}
-          {props.underlinedTitle !== undefined &&
+          {title}
+          {underlinedTitle && (
             <>
-              {props.title !== undefined &&
-                <br />
-              }
-              <UnderlineText className="font-bold">{String(props.underlinedTitle)}</UnderlineText>
+              {title && <br />}
+              <UnderlineText className="font-bold">{underlinedTitle}</UnderlineText>
             </>
-          }
+          )}
         </span>
-        <p className={`mt-4 text-[17px] lg:text-[14px]`}>{props.description}</p>
-        {props.hasArrow && (
+        {description}
+        {hasArrow && (
           <Image
             src="/arrow-jump.svg"
             alt="arrow right"
