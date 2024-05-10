@@ -10,7 +10,7 @@ const Hero = (props: Props) => {
         <h1 className="text-3xl pt-10 lg:pt-24 pb-4 leading-snug lg:pb-8 lg:text-5xl font-bold text-center tracking-tight text-[#26274b] relative">
           Potřebujete půjčku, ale v bance vám jí nedají? <div className="cross-img-marketing"></div>
         </h1>
-        <p className="text-xl lg:text-2xl text-center lg:w-2/3 mx-auto pt-3 lg:pt-6 pb-6 text-[#26274b] leading-normal">
+        <p className="text-xl lg:text-[26px] text-center lg:w-2/3 mx-auto pt-3 lg:pt-6 pb-6 text-[#26274b] leading-normal">
         My vám půjčku schválíme  <br className=" min-[450px]:hidden" />
           <UnderlineText className="font-bold text-2xl pb-0.5 lg:pb-1">
             do 72 hodin.
