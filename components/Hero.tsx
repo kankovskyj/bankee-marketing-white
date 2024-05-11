@@ -6,7 +6,7 @@ type Props = {}
 
 const Hero = (props: Props) => {
   return (
-    <section className="pb-12 lg:pb-6 flex flex-col">
+    <section className="pb-12 lg:pb-6 flex flex-col overflow-hidden">
         <h1 className="text-3xl pt-10 lg:pt-24 pb-4 leading-snug lg:pb-8 lg:text-5xl font-bold text-center tracking-tight text-[#26274b] relative">
           Potřebujete půjčku, ale v bance vám jí nedají? <div className="cross-img-marketing"></div>
         </h1>
